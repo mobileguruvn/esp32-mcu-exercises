@@ -1,0 +1,26 @@
+# ===== ESP-IDF build output =====
+build/
+sdkconfig.old
+sdkconfig.defaults.old
+
+# Managed components (tải lại được bằng idf.py reconfigure)
+managed_components/
+dependencies.lock
+
+# ===== macOS =====
+.DS_Store
+
+# ===== Python =====
+__pycache__/
+*.pyc
+
+# ===== Logs / tạm =====
+*.log
+*.tmp
+
+# ===== Ghi chú về sdkconfig =====
+# Mặc định KHÔNG ignore `sdkconfig` để bạn giữ lại cấu hình đã chỉnh
+# (flash 16MB, PSRAM Octal 8MB, partition table...) cho từng exercise.
+# Nếu muốn theo chuẩn "reproducible" hơn, hãy commit `sdkconfig.defaults`
+# thay cho `sdkconfig` và bỏ comment dòng dưới:
+# sdkconfig
